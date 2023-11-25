@@ -1,0 +1,17 @@
+﻿<Window x:Class="DuplicateFileChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mükerrer Dosya Kontrol" Height="455" Width="831">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23" />
+            <RowDefinition Height="364*" />
+            <RowDefinition Height="33" />
+        </Grid.RowDefinitions>
+        <Button HorizontalAlignment="Left" Content="Dizin Seç" Click="Button_Click"></Button>
+        <ListBox Grid.Row="1" HorizontalAlignment="Stretch" Name="LbDupFileList" VerticalAlignment="Stretch"  />
+        <StatusBar Grid.Row="2" HorizontalAlignment="Stretch" Name="StatusBar1" VerticalAlignment="Stretch" >
+            <Label Name="LblStatus" Content="Lütfen Klasör Seçiniz..."></Label>
+        </StatusBar>
+    </Grid>
+</Window>
